@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Bn {
+            position: absolute;
+            left: 166px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Are you pretty?</h1>
+    <img src="https://tenor.com/view/cute-gif-23176838.gif" height="200">
+    <input type="button" value="Yes" onclick="f1()">
+    <div id="Bn" style="position:absolute; left:166px; top:370px; width:210px"></div>
+    <button id="myButton">No</button>
+
+    <script type="text/javascript">
+        var button = document.getElementById("myButton");
+        button.addEventListener("click", function() {
+          // Generate random positions for the button
+          var xPos = Math.floor(Math.random() * window.innerWidth);
+          var yPos = Math.floor(Math.random() * window.innerHeight);
+
+          // Update button  
+          button.style.position = "absolute";
+          button.style.top = yPos + "px";
+          button.style.left = xPos + "px";
+        });
+        
+
+        function f1() {
+            var name = prompt("What's your name beautiful?");
+            if (name == "" || name == null) {
+                alert("Please enter your name.");
+            } else {
+                alert("Hello " + name + ", Good morning.");
+                alert("Don't start of the day moody oki?");
+                alert("Eat your breakfast, hydrate always");
+                alert("I just want to remind you of the things you always forget");
+                alert("If you found this corny then, ediwow bala ka");
+                alert("Cant wait to wake up next to you.");
+                alert("I love you!");
+            }
+        }
+    </script>
+</body>
+</html>
